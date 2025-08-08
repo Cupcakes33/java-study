@@ -4,7 +4,7 @@ public class Factorial {
     public static void main(String[] args) {
         Factorial factorial = new Factorial();
         System.out.println(factorial.factorial(5));
-        System.out.println(factorial.factorial2(5));
+        System.out.println(factorial.factorial2(20));
     }
 
     public int factorial(int number) {
