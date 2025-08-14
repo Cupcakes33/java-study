@@ -19,6 +19,8 @@ public class javaLangEx1 {
 
 class Value {
     private int id;
+    private int value;
+
 
     public int getId() {
         return id;
@@ -28,7 +30,7 @@ class Value {
         this.id = id;
     }
 
-    private int value;
+
 
 
 
@@ -51,4 +53,15 @@ class Value {
     public int hashCode() {
         return Objects.hashCode(id);
     }
+
+
+    @Override
+    public String toString() {
+        return "Value{" +
+                "id=" + id +
+                ", value=" + value +
+                '}';
+    }
+
+
 }
