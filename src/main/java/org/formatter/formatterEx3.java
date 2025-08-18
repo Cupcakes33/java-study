@@ -7,7 +7,7 @@ import java.util.Date;
 public class formatterEx3 {
     public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2025, Calendar.SEPTEMBER, 18);
+        calendar.set(2025, Calendar.AUGUST, 18);
 
         Date date = calendar.getTime();
 
