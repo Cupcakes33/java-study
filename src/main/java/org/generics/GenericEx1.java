@@ -3,16 +3,16 @@ package org.generics;
 import java.util.ArrayList;
 
 public class GenericEx1 {
-    static class Flute {
+    static class Fruit {
         String name;
     }
 
-    static class Apple extends Flute {
+    static class Apple extends Fruit {
         String name;
     }
 
 
-    static class Box<T extends Flute> {
+    static class Box<T extends Fruit> {
         ArrayList<T> list = new ArrayList<>();
 
         void add(T item){list.add(item);}
@@ -27,13 +27,13 @@ public class GenericEx1 {
     }
 
     public static void main(String[] args) {
-        Box<Flute> FluteBox = new Box<Flute>();
-        Box<Apple> AppleBox = new Box<Apple>();
-//        Box<Apple> fruteBox = new Box<Frute>();
+        Box<Fruit> fruitBox = new Box<Fruit>();
+        Box<Apple> appleBox = new Box<Apple>();
+//        Box<Apple> fruitBox = new Box<Fruit>();
 //        Box<Frute> fruteBox2 = new Box<Apple>();
-        FluteBox.add(new Apple());
-        FluteBox.add(new Flute());
-        AppleBox.add(new Apple());
-//        AppleBox.add(new Frute());
+        fruitBox.add(new Apple());
+        fruitBox.add(new Fruit());
+        appleBox.add(new Apple());
+//        AppleBox.add(new Fruit());
     }
 }
