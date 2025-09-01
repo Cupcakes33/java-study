@@ -1,6 +1,7 @@
 package org.generics;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GenericEx1 {
     static class Fruit {
@@ -27,6 +28,8 @@ public class GenericEx1 {
     }
 
     public static void main(String[] args) {
+//        List<Object> objectList = new ArrayList<String>();  // 컴파일 에러!
+
         Box<Fruit> fruitBox = new Box<Fruit>();
         Box<Apple> appleBox = new Box<Apple>();
 //        Box<Apple> fruitBox = new Box<Fruit>();
