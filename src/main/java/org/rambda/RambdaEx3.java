@@ -3,6 +3,7 @@ package main.java.org.rambda;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.DoubleToIntFunction;
 
 public class RambdaEx3 {
     public static void main(String[] args) {
@@ -11,7 +12,8 @@ public class RambdaEx3 {
             list.add(i);
         }
 
-        list.forEach(i-> System.out.print(i+" ,"));
+
+        list.forEach(i -> System.out.print(i + " ,"));
         System.out.println();
 
         list.removeIf(x -> x % 2 == 0 || x % 3 == 0);
@@ -21,17 +23,15 @@ public class RambdaEx3 {
         System.out.println(list);
 
         Map<String, String> map = new HashMap<>();
-        for(int i=0;i<5;i++){
+        for (int i = 0; i < 5; i++) {
             map.put(String.valueOf(i), String.valueOf(i));
         }
 
-        map.forEach((k,v)-> {
+        map.forEach((k, v) -> {
             StringBuilder s = new StringBuilder("{")
                     .append(k).append(", ").append(v).append("}");
             System.out.println(s);
         });
-
-
 
 
     }
